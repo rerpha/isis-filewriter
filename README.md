@@ -7,7 +7,8 @@ Used for writing ISIS NeXus files with the filewriter.
 - Docker-compose
  
 ## Steps to run: 
-1. Replace `command-uri` in `config-files.file_writer_config.ini` to the correct broker/topic
-1. Replace `status-uri` in `config-files.file_writer_config.ini` to the correct broker/topic
+1. Replace `command-uri` in `config-files/file_writer_config.ini` to the correct broker/topic
+1. Replace `status-uri` in `config-files/file_writer_config.ini` to the correct broker/topic
+1. Replace `KAFKA_BROKER` in `docker-compose.yml` to the correct broker
 1. Run `docker-compose up` in the root directory
  
