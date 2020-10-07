@@ -5,6 +5,7 @@ services:
     image: screamingudder/file-writer:latest
     network_mode: "host"
     environment:
+      KAFKA_BROKER: "livedata.isis.cclrc.ac.uk"
       CONFIG_FILE: "/file_writer_config.ini"
     volumes:
       - ./config-files/file_writer_config.ini:/file_writer_config.ini
