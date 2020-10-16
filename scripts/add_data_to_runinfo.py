@@ -1,6 +1,5 @@
 import argparse
 import uuid
-
 from confluent_kafka.admin import AdminClient
 from confluent_kafka.cimpl import Consumer, Producer
 from streaming_data_types import deserialise_pl72, serialise_pl72
@@ -42,6 +41,7 @@ INST_NAMES = [
     "EMU",
 ]
 
+### In progress - this will only add certain static data to the nexus file. ###
 
 def _create_group(name, nx_class):
     return {
