@@ -4,7 +4,10 @@ Used for writing ISIS NeXus files with the filewriter.
 
 ## Requirements 
 - Docker
-- Docker-compose
+- `docker-compose`
+
+(_optional for scripts_)
+- `confluent_kafka`
  
 ## Steps to run: 
 1. Replace `command-uri` in `config-files/file_writer_config.ini` to the correct broker/topic
@@ -20,3 +23,6 @@ Used for writing ISIS NeXus files with the filewriter.
 To remove the container, use `docker rm [container]`
 
 To remove the container's image, use `docker rmi  [imagename]`
+
+## Scripts
+Some utility scripts for basic Kafka tasks can be found in the `scripts` directory of this project. These are very much experimental so use with caution before trying to use with any sort of production cluster. 
